@@ -19,10 +19,10 @@ client.on('message', async msg => {
     	msg.channel.send('**Discord Link for the bot: Coming soon**');
   	} else
         if (msg.content === './server') {
-    	msg.channel.send('**This is a ZythronPE server! Come and play if you have a time!** ```IP: play.zythronpe.ml | Port: 19132```');
+    	msg.channel.send('**Join ZythronPE ```IP: play.zythronpe.ml | Port: 19132```');
   	} else
         if (msg.content === './info') {
-    	msg.channel.send('**This bot was created on 9 May 2018! Using a code with Discord.js!** ```---``` **Version**: IMB-1.0 (BETA) ```---``` **It is owned by** MrLukePotatoes#1488');
+    	msg.channel.send('**This bot was created on 9 May 2018! Using a code with Discord.js!** ```---``` **Version**: LUKE-1.0 (BETA) ```---``` **It is owned by** MrLukePotatoes#1488');
   	}
 });
 
