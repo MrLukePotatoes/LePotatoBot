@@ -35,6 +35,7 @@ client.on('message', async msg => {
     } else
         if (msg.content === '@MrLukePotatoes#1488') {
         msg.channel.send('**Ooo. Tagging him? Make sure he is online!**');
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
