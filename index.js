@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('the codes', {type: 'WATCHING'});
+    client.user.setActivity('Discord', {type: 'STREAMING'});
 });
 
 client.on('message', async msg => {
@@ -29,7 +29,9 @@ client.on('message', async msg => {
     } else
         if (msg.content === './about') {
         msg.channel.send('**Bot was created by @MrLukePotatoes#1488!** *Helped by @Zadezter#0207*');
-    }
+    } else
+        if (msg.content === './version') {
+        msg.channel.send('**Version:** *Luke-1.0 [BETA]*
 });
 
 client.login(process.env.BOT_TOKEN);
