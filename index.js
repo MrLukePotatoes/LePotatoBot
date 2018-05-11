@@ -15,8 +15,8 @@ client.on('message', async msg => {
         if (msg.content === 'Luke') {
     	msg.channel.send('You have called him. Please tell, what do you want to talk about?');
   	} else
-        if (msg.content === '$ghostview') {
-    	msg.channel.send('**Download the latest plugin builds on Poggit at:** __http://poggit.pmmp.io/ci/Zadezter/GhostView__ ```---``` **Check all source code what it made by Zadezter on Github at:** __http://github.com/Zadezter/GhostView__');
+        if (msg.content === '$discord') {
+    	msg.channel.send('**Discord Link for the bot: Coming soon**');
   	} else
         if (msg.content === '$server') {
     	msg.channel.send('**This is a ZythronPE server! Come and play if you have a time!** ```IP: play.zythronpe.ml | Port: 19132```');
