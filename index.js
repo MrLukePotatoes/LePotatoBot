@@ -25,7 +25,7 @@ client.on('message', async msg => {
     	msg.channel.send('**This bot was created on 9 May 2018! Using a code with Discord.js!** ```---``` **Version**: LUKE-1.0 (BETA) ```---``` **It is owned by** MrLukePotatoes#1488');
   	} else
         if (msg.content === './github')  {
-        msg.channel.send('**__GITHUB__ ```---``` https://github.com/MrLukePotatoes/LePotatoBot
+        msg.channel.send('**__GITHUB__ ```---``` https://github.com/MrLukePotatoes/LePotatoBot');
 });
 
 client.login(process.env.BOT_TOKEN);
