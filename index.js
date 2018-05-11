@@ -26,7 +26,7 @@ client.on('message', async msg => {
   	} else
         if (msg.content === './github') {
         msg.channel.send('**__GITHUB__ ```---``` https://github.com/MrLukePotatoes/LePotatoBot');
-    }
+   }
 });
 
 client.login(process.env.BOT_TOKEN);
