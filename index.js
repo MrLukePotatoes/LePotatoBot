@@ -26,7 +26,10 @@ client.on('message', async msg => {
   	} else
         if (msg.content === './github') {
         msg.channel.send('**__GITHUB__ ```---``` https://github.com/MrLukePotatoes/LePotatoBot');
-   }
+    } else
+        if (msg.content === './about') {
+        msg.channel.send('**Bot was created by @MrLukePotatoes#1488!** *Helped by @Zadezter#0207*');
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
