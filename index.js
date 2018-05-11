@@ -10,7 +10,7 @@ client.on('message', async msg => {
     if(msg.author.bot) return;
     
     if (msg.content === './help') {
-    	msg.channel.send('**__Commands List__** ```[ ./server | ./info | ./discord | ./help | ./github | ./about ]``` **__Updated By__** MrLukePotatoes#1488');
+    	msg.channel.send('**__Commands List__** ```[ ./server | ./info | ./discord | ./help | ./github | ./about | ./version ]``` **__Updated By__** MrLukePotatoes#1488');
   	} else
         if (msg.content === 'Luke') {
     	msg.channel.send('You called Luke! What do u need? ');
