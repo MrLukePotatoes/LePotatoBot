@@ -31,7 +31,8 @@ client.on('message', async msg => {
         msg.channel.send('**Bot was created by @MrLukePotatoes#1488!** *Helped by @Zadezter#0207*');
     } else
         if (msg.content === './version') {
-        msg.channel.send('**Version:** *Luke-1.0 [BETA]*
+        msg.channel.send('**Version:** *Luke-1.0 [BETA]*')
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
