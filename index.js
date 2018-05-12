@@ -38,6 +38,7 @@ client.on('message', async msg => {
     } else
         if (msg.content === './help 2') {
         msg.channel.send('**Command List | Page 2/2** ```[ ./github | ./about | ./version ]');
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
