@@ -37,7 +37,7 @@ client.on('message', async msg => {
         msg.channel.send('**Ooo. Tagging him? Make sure he is online!**');
     } else
         if (msg.content === './help 2') {
-        msg.channel.send('**Command List | Page 2/2** ```[ ./github | ./about | ./version ]```');
+        msg.channel.send('**Command List | Page 2/2** ```[ ./github | ./about | ./version | ./changelog ]```');
     } else
         if (msg.content === './changelog') {
         msg.channel.send('__**CHANGELOG | 5/12/18**__ ```Added ./help 2 and edited ./help```');
