@@ -10,7 +10,7 @@ client.on('message', async msg => {
     if(msg.author.bot) return;
     
     if (msg.content === './help') {
-    	msg.channel.send('**__Commands List__** ```[ ./server | ./info | ./discord | ./help | ./github | ./about | ./version ]``` **__Updated By__** MrLukePotatoes#1488');
+    	msg.channel.send('**Command List | Page 1/2** ```[ ./server | ./info | ./discord | ./help | ```');
   	} else
         if (msg.content === 'Luke') {
     	msg.channel.send('You called Luke! What do u need? ');
@@ -22,7 +22,7 @@ client.on('message', async msg => {
     	msg.channel.send('**Join ZythronPE** ```IP: play.zythronpe.ml | Port: 19132```');
   	} else
         if (msg.content === './info') {
-    	msg.channel.send('**This bot was created on 9 May 2018! Using a code with Discord.js!** ```---``` **Version**: LUKE-1.0 (BETA) ```---``` **It is owned by** MrLukePotatoes#1488');
+    	msg.channel.send('**This bot was created on 9 May 2018 with the use of codes and Heroku!');
   	} else
         if (msg.content === './github') {
         msg.channel.send('**__GITHUB__** https://github.com/MrLukePotatoes/LePotatoBot');
@@ -35,7 +35,9 @@ client.on('message', async msg => {
     } else
         if (msg.content === '@MrLukePotatoes#1488') {
         msg.channel.send('**Ooo. Tagging him? Make sure he is online!**');
-    }
+    } else
+        if (msg.content === './help 2') {
+        msg.channel.send('**Command List | Page 2/2** ```[ ./github | ./about | ./version ]');
 });
 
 client.login(process.env.BOT_TOKEN);
