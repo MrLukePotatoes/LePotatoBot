@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('LUKE-1.0 | ./help', {type: 'STREAMING'});
+    client.user.setActivity('Luke-1.0 | ./help', {type: 'STREAMING'});
 });
 
 client.on('message', async msg => {
@@ -38,7 +38,9 @@ client.on('message', async msg => {
     } else
         if (msg.content === './help 2') {
         msg.channel.send('**Command List | Page 2/2** ```[ ./github | ./about | ./version ]```');
-    }
+    } else
+        if (msg.content === './changelog') {
+        msg.channel.send('__**CHANGELOG | 5/12/18**__ ```Added ./help 2 and edited ./help```
 });
 
 client.login(process.env.BOT_TOKEN);
