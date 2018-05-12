@@ -40,7 +40,8 @@ client.on('message', async msg => {
         msg.channel.send('**Command List | Page 2/2** ```[ ./github | ./about | ./version ]```');
     } else
         if (msg.content === './changelog') {
-        msg.channel.send('__**CHANGELOG | 5/12/18**__ ```Added ./help 2 and edited ./help```
+        msg.channel.send('__**CHANGELOG | 5/12/18**__ ```Added ./help 2 and edited ./help```');
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
