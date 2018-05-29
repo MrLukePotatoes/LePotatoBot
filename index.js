@@ -43,7 +43,8 @@ client.on('message', async msg => {
         msg.channel.send('__**CHANGELOG | 5/12/18**__ ```Added ./help 2 and edited ./help```');
     } else
         if (msg.content === './imc') {
-        msg.channel.send('__**IMPLADEMC DISCORD SERVER**__ ```Coming soon.``` __**IMPLADEMC SERVER IP AND PORT**__ ```Coming soon```
+        msg.channel.send('__**IMPLADEMC DISCORD SERVER**__ ```Coming soon.``` __**IMPLADEMC SERVER IP AND PORT**__ ```Coming soon```');
+    } 
 });
 
 client.login(process.env.BOT_TOKEN);
