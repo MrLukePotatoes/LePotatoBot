@@ -3,23 +3,20 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('and Coding :3', {type: 'STREAMING'});
+    client.user.setActivity('Hacked By Becken', {type: 'WATCHING'});
 });
 
 client.on('message', async msg => {
     if(msg.author.bot) return;
     
     if (msg.content === './help') {
-    	msg.channel.send('**Command List | Page 1/2** ```[ ./server | ./info | ./discord | ./help | ```');
+    	msg.channel.send('**Command List | Page 1/2** ```[ ./imc | ./info | ./discord | ./help | ```');
   	} else
         if (msg.content === 'Luke') {
     	msg.channel.send('You called Luke! What do u need? ');
   	} else
         if (msg.content === './discord') {
     	msg.channel.send('**Discord Link for the bot: Coming soon**');
-  	} else
-        if (msg.content === './server') {
-    	msg.channel.send('**Join ZythronPE** ```IP: play.zythronpe.ml | Port: 19132```');
   	} else
         if (msg.content === './info') {
     	msg.channel.send('**This bot was created on 9 May 2018 with the use of codes and Heroku!');
@@ -44,7 +41,10 @@ client.on('message', async msg => {
     } else
         if (msg.content === './imc') {
         msg.channel.send('__**IMPLADEMC DISCORD SERVER**__ ```Coming soon.``` __**IMPLADEMC SERVER IP AND PORT**__ ```Coming soon```');
-    } 
+    } else
+        if (msg.content === './friends') {
+        msg.channel.send('__**FRIENDS**__ ```Zadezter, Pooofy, TheMaskGuy, haKingdomsCraft, FreeGamingHere, JustyGamer and More to be added```');
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
