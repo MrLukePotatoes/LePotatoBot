@@ -44,7 +44,17 @@ client.on('message', async msg => {
     } else
         if (msg.content === './friends') {
         msg.channel.send('__**FRIENDS**__ ```Zadezter, Pooofy, TheMaskGuy, haKingdomsCraft, FreeGamingHere, JustyGamer and More to be added```');
-    }
+ };
+    
+   if (message.content === '$picture') {
+     let pictureembed = new Discord.RichEmbed()
+     .setTitle('Hey ${message.author.tag}, is this your profile picture ;)')
+     .setColor('RANDOM')
+     .setImage(message.author.avatarURL + "?size=2048") 
+     .setFooter(`Requested by ${message.author.tag}`)
+     return message.channel.send(pictureembed)
+   };
+   
 });
 
 client.login(process.env.BOT_TOKEN);
