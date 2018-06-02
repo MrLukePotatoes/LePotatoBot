@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('Hacked By Becken', {type: 'WATCHING'});
+    client.user.setActivity('Luke changing codes', {type: 'WATCHING'});
 });
 
 client.on('message', async msg => {
@@ -46,7 +46,7 @@ client.on('message', async msg => {
         msg.channel.send('__**FRIENDS**__ ```Zadezter, Pooofy, TheMaskGuy, haKingdomsCraft, FreeGamingHere, JustyGamer and More to be added```');
  };
     
-   if (message.content === '$picture') {
+   if (message.content === './picture') {
      let pictureembed = new Discord.RichEmbed()
      .setTitle('Hey ${message.author.tag}, is this your profile picture ;)')
      .setColor('RANDOM')
