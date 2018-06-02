@@ -24,21 +24,41 @@ client.on('message', async msg => {
       return message.channel.send(helpembed)
     };
     
-        if (msg.content === 'Luke') {
-    	msg.channel.send('You called Luke! What do u need? ');
-  	} else
-        if (msg.content === './discord') {
-    	msg.channel.send('**Discord Link for the bot: Coming soon**');
-  	} else
-        if (msg.content === './info') {
-    	msg.channel.send('**This bot was created on 9 May 2018 with the use of codes and Heroku!');
-  	} else
-        if (msg.content === './github') {
-        msg.channel.send('**__GITHUB__** https://github.com/MrLukePotatoes/LePotatoBot');
-    } else
-        if (msg.content === './about') {
-        msg.channel.send('**Bot was created by @MrLukePotatoes#1488!** *Helped by @Zadezter#0207*');
-    } else
+    if (msg.content === '@MrLukePotatoes') {
+      let lukeembed = Discord.RichEmbed()
+      .settitle('You called Luke. What do u need')
+      .addField(' @MrLukePotatoes#1448 ')
+      return message.channel.send(lukeembed)
+    };
+         
+    if (msg.content === './discord') {
+      let discordembed = Discord.RichEmbed()
+      .settitle(' Discord link for the bot ')
+      .addField(' Coming soon ')
+      return message.channel.send(lukeembed)
+    };
+        
+    if (msg.content === './info') {
+      let infoembed = Discord.RichEmbed()
+      .settitle(' Bot info ')
+      .addField(' Made on May 9 2018 ')
+      return message.channel.send(infoembed)
+    };
+        
+    if (msg.content === './github') {
+      let githubembed = Discord.RichEmbed()
+      .settitle(' Github Repo ')
+      .addField(' https://github.com/MrLukePotatoes/LePotatoBot ')
+      return message.channel.send(githubembed)
+    };
+    if (msg.content === './about') {
+      let aboutembed = Discord.RichEmbed()
+      .settitle(' Credits ')
+      .addField(' @MrLukePotatoes#1448 for summoning me ')
+      .addField(' @Zadezter#0207 for Helping my Master ')
+      return message.channel.send(aboutembed)
+    };          
+      
         if (msg.content === './version') {
         msg.channel.send('**Version:** *Luke-1.0 [BETA]*');
     } else
