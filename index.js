@@ -8,10 +8,22 @@ client.on('ready', () => {
 
 client.on('message', async msg => {
     if(msg.author.bot) return;
-    
+   
     if (msg.content === './help') {
-    	msg.channel.send('**Command List | Page 1/2** ```[ ./imc | ./info | ./discord | ./help | ```');
-  	} else
+      let helpembed = Discord.RichEmbed()
+      .settitle('LePotatoBot‘s Command List')
+      .addField(' ${message.author.tag} Here is what u requested :)')
+      .addField(' ./discord = Bot‛s Discord Link ')
+      .addField(' ./info = Bot info ')
+      .addField(' ./github = Github Repo ')
+      .addField(' ./about = Another Bot info')
+      .addField(' ./version = Bot version')
+      .addField(' ./imc = ImpladeMC Discord and Server IP')
+      .addField(' ./friends = My friends ;D ')
+      .addField(' Coming SOON ./enemies = My enemies ')
+      return message.channel.send(helpembed)
+    };
+    
         if (msg.content === 'Luke') {
     	msg.channel.send('You called Luke! What do u need? ');
   	} else
