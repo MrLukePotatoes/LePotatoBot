@@ -107,7 +107,7 @@ client.on('message', async msg => {
       .addField(' haKingdomsCraft ')
       .addField(' More to be added ')
       return message channel.send(friendsembed)
- };
+    };
     
    if (message.content === './picture') {
      let pictureembed = new Discord.RichEmbed()
