@@ -21,35 +21,35 @@ client.on('message', async msg => {
       .addField(' ./imc = ImpladeMC Discord and Server IP')
       .addField(' ./friends = My friends ;D ')
       .addField(' Coming SOON ./enemies = My enemies ')
-      return message.channel.send(helpembed)
+      return message.channel.send(helpembed);
     };
     
     if (msg.content === '@MrLukePotatoes') {
       let lukeembed = Discord.RichEmbed()
       .settitle('You called Luke. What do u need')
       .addField(' @MrLukePotatoes#1448 ')
-      return message.channel.send(lukeembed)
+      return message.channel.send(lukeembed);
     };
          
     if (msg.content === './discord') {
       let discordembed = Discord.RichEmbed()
       .settitle(' Discord link for the bot ')
       .addField(' Coming soon ')
-      return message.channel.send(lukeembed)
+      return message.channel.send(discordembed);
     };
         
     if (msg.content === './info') {
       let infoembed = Discord.RichEmbed()
       .settitle(' Bot info ')
       .addField(' Made on May 9 2018 ')
-      return message.channel.send(infoembed)
+      return message.channel.send(infoembed);
     };
         
     if (msg.content === './github') {
       let githubembed = Discord.RichEmbed()
       .settitle(' Github Repo ')
       .addField(' https://github.com/MrLukePotatoes/LePotatoBot ')
-      return message.channel.send(githubembed)
+      return message.channel.send(githubembed);
     };
     
     if (msg.content === './about') {
@@ -57,7 +57,7 @@ client.on('message', async msg => {
       .settitle(' Credits ')
       .addField(' @MrLukePotatoes#1448 for summoning me ')
       .addField(' @Zadezter#0207 for Helping my Master ')
-      return message.channel.send(aboutembed)
+      return message.channel.send(aboutembed);
     };          
       
     if (msg.content === './version') {
@@ -65,14 +65,14 @@ client.on('message', async msg => {
       .settitle(' Bot Version ')
       .addField('Bot version 1.2')
       .addField('Updated by MrLukePotatoes')
-      return message.channel.send(versionembed)
+      return message.channel.send(versionembed);
     };
         
     if (msg.content === '@MrLukePotatoes#1488') {
       let taglukeembed = Discord.RichEmbed()
       .settitle(' Bruv u hacks ')
       .addField(' Reporting... ')
-      return message.channel.send(taglukeembed)
+      return message.channel.send(taglukeembed);
     };
         
     if (msg.content === './help 2') {
@@ -80,7 +80,7 @@ client.on('message', async msg => {
       .settitle(' Command doesnt exist anymore ')
       .addField(' Luke may have deleted this command ')
       .addField(' Do ./help for commands ')
-      return message.channel.send(help2embed)
+      return message.channel.send(help2embed);
     };
         
     if (msg.content === './changelog') {
@@ -88,14 +88,14 @@ client.on('message', async msg => {
       .settitle(' Command doesnt exist anymore ')
       .addField(' Luke may have deleted this command ')
       .addField(' Do ./help for commands ')
-      return message.channel.send(changelogembed)
+      return message.channel.send(changelogembed);
     };
         
     if (msg.content === './imc') {
       let imcembed = Discord.RichEmbed
       .settitle(' ImpladeMC Discord Server & Server IP and Port ')
       .addField(' Soon ')
-      return message.channel.send(imcembed)
+      return message.channel.send(imcembed);
     };
         
     if (msg.content === './friends') {
@@ -106,7 +106,7 @@ client.on('message', async msg => {
       .addField(' FreeGamingHere ')
       .addField(' haKingdomsCraft ')
       .addField(' More to be added ')
-      return message channel.send(friendsembed)
+      return message channel.send(friendsembed);
    };
     
    if (message.content === './picture') {
@@ -117,7 +117,6 @@ client.on('message', async msg => {
      .setFooter(`Requested by ${message.author.tag}`)
      return message.channel.send(pictureembed)
    };
-   
 });
 
 client.login(process.env.BOT_TOKEN);
