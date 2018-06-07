@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('Luke changing codes', {type: 'WATCHING'});
+    client.user.setActivity('You', {type: 'WATCHING'});
 });
 
 client.on('message', async msg => {
