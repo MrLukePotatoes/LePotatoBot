@@ -51,6 +51,7 @@ client.on('message', async msg => {
       .addField(' https://github.com/MrLukePotatoes/LePotatoBot ')
       return message.channel.send(githubembed)
     };
+    
     if (msg.content === './about') {
       let aboutembed = Discord.RichEmbed()
       .settitle(' Credits ')
@@ -59,23 +60,53 @@ client.on('message', async msg => {
       return message.channel.send(aboutembed)
     };          
       
-        if (msg.content === './version') {
-        msg.channel.send('**Version:** *Luke-1.0 [BETA]*');
-    } else
-        if (msg.content === '@MrLukePotatoes#1488') {
-        msg.channel.send('**Ooo. Tagging him? Make sure he is online!**');
-    } else
-        if (msg.content === './help 2') {
-        msg.channel.send('**Command List | Page 2/2** ```[ ./github | ./about | ./version | ./changelog ]```');
-    } else
-        if (msg.content === './changelog') {
-        msg.channel.send('__**CHANGELOG | 5/12/18**__ ```Added ./help 2 and edited ./help```');
-    } else
-        if (msg.content === './imc') {
-        msg.channel.send('__**IMPLADEMC DISCORD SERVER**__ ```Coming soon.``` __**IMPLADEMC SERVER IP AND PORT**__ ```Coming soon```');
-    } else
-        if (msg.content === './friends') {
-        msg.channel.send('__**FRIENDS**__ ```Zadezter, Pooofy, TheMaskGuy, haKingdomsCraft, FreeGamingHere, JustyGamer and More to be added```');
+    if (msg.content === './version') {
+      let versionembed = Discord.RichEmbed()
+      .settitle(' Bot Version ')
+      .addField('Bot version 1.2')
+      .addField('Updated by MrLukePotatoes')
+      return message.channel.send(versionembed)
+    };
+        
+    if (msg.content === '@MrLukePotatoes#1488') {
+      let taglukeembed = Discord.RichEmbed()
+      .settitle(' Bruv u hacks ')
+      .addField(' Reporting... ')
+      return message.channel.send(taglukeembed)
+    };
+        
+    if (msg.content === './help 2') {
+      let help2embed = Discord.RichEmbed
+      .settitle(' Command doesnt exist anymore ')
+      .addField(' Luke may have deleted this command ')
+      .addField(' Do ./help for commands ')
+      return message.channel.send(help2embed)
+    };
+        
+    if (msg.content === './changelog') {
+      let changelogembed = Discord.RichEmbed
+      .settitle(' Command doesnt exist anymore ')
+      .addField(' Luke may have deleted this command ')
+      .addField(' Do ./help for commands ')
+      return message.channel.send(changelogembed)
+    };
+        
+    if (msg.content === './imc') {
+      let imcembed = Discord.RichEmbed
+      .settitle(' ImpladeMC Discord Server & Server IP and Port ')
+      .addField(' Soon ')
+      return message.channel.send(imcembed)
+    };
+        
+    if (msg.content === './friends') {
+      let friendsembed = Discord.RichEmbe
+      .settitle(' Lukes friend list ')
+      .addField(' Zadezter ')
+      .addField(' JustyGamer ')
+      .addField(' FreeGamingHere ')
+      .addField(' haKingdomsCraft ')
+      .addField(' More to be added ')
+      return message channel.send(friendsembed)
  };
     
    if (message.content === './picture') {
