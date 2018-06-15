@@ -10,7 +10,7 @@ client.on('message', async msg => {
     if(msg.author.bot) return;
    
     if (msg.content === './help') {
-      let helpembed = Discord.RichEmbed()
+      let helpembed = new Discord.RichEmbed()
       .settitle('LePotatoBot‘s Command List')
       .addField(' ${message.author.tag} Here is what u requested :)')
       .addField(' ./discord = Bot‛s Discord Link ')
@@ -25,35 +25,35 @@ client.on('message', async msg => {
     };
     
     if (msg.content === '@MrLukePotatoes') {
-      let lukeembed = Discord.RichEmbed()
+      let lukeembed = new Discord.RichEmbed()
       .settitle('You called Luke. What do u need')
       .addField(' @MrLukePotatoes#1448 ')
       return message.channel.send(lukeembed);
     };
          
     if (msg.content === './discord') {
-      let discordembed = Discord.RichEmbed()
+      let discordembed = new Discord.RichEmbed()
       .settitle(' Discord link for the bot ')
       .addField(' Coming soon ')
       return message.channel.send(discordembed);
     };
         
     if (msg.content === './info') {
-      let infoembed = Discord.RichEmbed()
+      let infoembed = new Discord.RichEmbed()
       .settitle(' Bot info ')
       .addField(' Made on May 9 2018 ')
       return message.channel.send(infoembed);
     };
         
     if (msg.content === './github') {
-      let githubembed = Discord.RichEmbed()
+      let githubembed = new Discord.RichEmbed()
       .settitle(' Github Repo ')
       .addField(' https://github.com/MrLukePotatoes/LePotatoBot ')
       return message.channel.send(githubembed);
     };
     
     if (msg.content === './about') {
-      let aboutembed = Discord.RichEmbed()
+      let aboutembed = new Discord.RichEmbed()
       .settitle(' Credits ')
       .addField(' @MrLukePotatoes#1448 for summoning me ')
       .addField(' @Zadezter#0207 for Helping my Master ')
@@ -61,7 +61,7 @@ client.on('message', async msg => {
     };          
       
     if (msg.content === './version') {
-      let versionembed = Discord.RichEmbed()
+      let versionembed = new Discord.RichEmbed()
       .settitle(' Bot Version ')
       .addField('Bot version 1.2')
       .addField('Updated by MrLukePotatoes')
@@ -69,14 +69,14 @@ client.on('message', async msg => {
     };
         
     if (msg.content === '@MrLukePotatoes#1488') {
-      let taglukeembed = Discord.RichEmbed()
+      let taglukeembed = new Discord.RichEmbed()
       .settitle(' Bruv u hacks ')
       .addField(' Reporting... ')
       return message.channel.send(taglukeembed);
     };
         
     if (msg.content === './help 2') {
-      let help2embed = Discord.RichEmbed
+      let help2embed = new Discord.RichEmbed
       .settitle(' Command doesnt exist anymore ')
       .addField(' Luke may have deleted this command ')
       .addField(' Do ./help for commands ')
@@ -84,7 +84,7 @@ client.on('message', async msg => {
     };
         
     if (msg.content === './changelog') {
-      let changelogembed = Discord.RichEmbed
+      let changelogembed = new Discord.RichEmbed
       .settitle(' Command doesnt exist anymore ')
       .addField(' Luke may have deleted this command ')
       .addField(' Do ./help for commands ')
@@ -92,14 +92,14 @@ client.on('message', async msg => {
     };
         
     if (msg.content === './imc') {
-      let imcembed = Discord.RichEmbed
+      let imcembed = new Discord.RichEmbed
       .settitle(' ImpladeMC Discord Server & Server IP and Port ')
       .addField(' Soon ')
       return message.channel.send(imcembed);
     };
         
     if (msg.content === './friends') {
-      let friendsembed = Discord.RichEmbe
+      let friendsembed = new Discord.RichEmbe
       .settitle(' Lukes friend list ')
       .addField(' Zadezter ')
       .addField(' JustyGamer ')
