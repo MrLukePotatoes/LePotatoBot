@@ -45,6 +45,7 @@ client.on('message', async msg => {
     let infoembed = new Discord.RichEmbed()
     .setTitle(' Bot info ')
     .addField(' Made on May 9 2018 ')
+    .setColor('RANDOM')
     return message.channel.send(infoembed)
     };
         
@@ -52,6 +53,7 @@ client.on('message', async msg => {
     let githubembed = new Discord.RichEmbed()
     .setTitle(' Github Repo ')
     .addField(' https://github.com/MrLukePotatoes/LePotatoBot ')
+    .setColor('RANDOM')
     return message.channel.send(githubembed)
     };
     
@@ -60,6 +62,7 @@ client.on('message', async msg => {
     .setTitle(' Credits ')
     .addField(' @MrLukePotatoes#1448 for summoning me ')
     .addField(' @Zadezter#0207 for Helping my Master ')
+    .setColor('RANDOM')
     return message.channel.send(aboutembed);
     };          
       
@@ -68,6 +71,7 @@ client.on('message', async msg => {
     .setTitle(' Bot Version ')
     .addField('Bot version 1.2')
     .addField('Updated by MrLukePotatoes')
+    .setColor('RANDOM')
     return message.channel.send(versionembed);
     };
         
@@ -75,6 +79,7 @@ client.on('message', async msg => {
     let taglukeembed = new Discord.RichEmbed()
     .setTitle(' Bruv u hacks ')
     .addField(' Reporting... ')
+    .setColor('RANDOM')
     return message.channel.send(taglukeembed);
     };
         
@@ -83,6 +88,7 @@ client.on('message', async msg => {
     .setTitle(' Command doesnt exist anymore ')
     .addField(' Luke may have deleted this command ')
     .addField(' Do ./help for commands ')
+    .setColor('RANDOM')
     return message.channel.send(help2embed);
     };
         
@@ -91,6 +97,7 @@ client.on('message', async msg => {
     .setTitle(' Command doesnt exist anymore ')
     .addField(' Luke may have deleted this command ')
     .addField(' Do ./help for commands ')
+    .setColor('RANDOM')
     return message.channel.send(changelogembed);
     };
         
@@ -98,9 +105,11 @@ client.on('message', async msg => {
     let imcembed = new Discord.RichEmbed
     .setTitle(' ImpladeMC Discord Server & Server IP and Port ')
     .addField(' Soon ')
+    .setColor('RANDOM')
     return message.channel.send(imcembed);
     };
-        
+    
+    
     if (msg.content === './friends') {
     let friendsembed = new Discord.RichEmbe
     .setTitle(' Lukes friend list ')
@@ -109,17 +118,18 @@ client.on('message', async msg => {
     .addField(' FreeGamingHere ')
     .addField(' haKingdomsCraft ')
     .addField(' More to be added ')
+    .setColor('RANDOM')
     return message channel.send(friendsembed);
     };
     
-   if (message.content === './picture') {
-   let pictureembed = new Discord.RichEmbed()
-   .setTitle('Hey Steve, is this your profile picture? ;)')
-   .setColor('RANDOM')
-   .setImage(message.author.avatarURL + "?size=2048") 
-   .setFooter(`Requested by ${message.author.tag}`)
-   return message.channel.send(pictureembed)
-   };
+    if (message.content === './picture') {
+    let pictureembed = new Discord.RichEmbed()
+    .setTitle('Hey Steve, is this your profile picture? ;)')
+    .setColor('RANDOM')
+    .setImage(message.author.avatarURL + "?size=2048") 
+    .setFooter(`Requested by ${message.author.tag}`)
+    return message.channel.send(pictureembed)
+    };
 });
 
 client.login(process.env.BOT_TOKEN);
