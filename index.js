@@ -73,14 +73,14 @@ client.on('message', async msg => {
         
     if (msg.content === '@MrLukePotatoes#1488') {
     let taglukeembed = new Discord.RichEmbed()
-    .settitle(' Bruv u hacks ')
+    .setTitle(' Bruv u hacks ')
     .addField(' Reporting... ')
     return message.channel.send(taglukeembed);
     };
         
     if (msg.content === './help 2') {
     let help2embed = new Discord.RichEmbed
-    .settitle(' Command doesnt exist anymore ')
+    .setTitle(' Command doesnt exist anymore ')
     .addField(' Luke may have deleted this command ')
     .addField(' Do ./help for commands ')
     return message.channel.send(help2embed);
@@ -88,7 +88,7 @@ client.on('message', async msg => {
         
     if (msg.content === './changelog') {
     let changelogembed = new Discord.RichEmbed
-    .settitle(' Command doesnt exist anymore ')
+    .setTitle(' Command doesnt exist anymore ')
     .addField(' Luke may have deleted this command ')
     .addField(' Do ./help for commands ')
     return message.channel.send(changelogembed);
@@ -96,14 +96,14 @@ client.on('message', async msg => {
         
     if (msg.content === './imc') {
     let imcembed = new Discord.RichEmbed
-    .settitle(' ImpladeMC Discord Server & Server IP and Port ')
+    .setTitle(' ImpladeMC Discord Server & Server IP and Port ')
     .addField(' Soon ')
     return message.channel.send(imcembed);
     };
         
     if (msg.content === './friends') {
     let friendsembed = new Discord.RichEmbe
-    .settitle(' Lukes friend list ')
+    .setTitle(' Lukes friend list ')
     .addField(' Zadezter ')
     .addField(' JustyGamer ')
     .addField(' FreeGamingHere ')
