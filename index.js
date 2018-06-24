@@ -129,7 +129,7 @@ client.on('message', async msg => {
     .addField(' haKingdomsCraft ')
     .addField(' More to be added ')
     .setColor('RANDOM')
-    return message channel.send(friendsembed)
+    return message.channel.send(friendsembed)
     };
     
     
