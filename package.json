@@ -1,31 +1,30 @@
 {
-  "name": "ImpladeBot",
+  "name": "lepotatobot",
   "version": "1.0.0",
-  "description": "A starter Discord bot",
+  "description": "Wierd Potato Bot",
   "main": "index.js",
-  "engines": {
-    "node": "10.0.0",
-    "npm": "*"
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "ms": "^2.1.1",
+    "ytdl-core": "^0.20.4"
   },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "./"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ImpladeDeveloped/ImpladeBot.git"
+    "url": "git+https://github.com/MrLukePotatoes/LePotatoBot.git"
   },
   "keywords": [
     "heroku",
-    "discord.js"
+    "discord.js",
+    "minecraft"
   ],
-  "author": "ImpladeDeveloped",
+  "author": "MrLukePotato",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ImpladeDeveloped/ImpladeBot/issues"
+    "url": "https://github.com/MrLukePotatoes/LePotatoBot/issues"
   },
-  "homepage": "https://github.com/ImpladeDeveloped/ImpladeBot#readme",
-  "dependencies": {
-    "discord.js": "11.3.2"
-  }
+  "homepage": "https://github.com/MrLukePotatoes/LePotatoBot#readme"
 }
