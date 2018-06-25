@@ -68,7 +68,7 @@ client.on('message', async message => {
     .setTitle(' Credits ')
     .addField('@MrLukePotatoes#1448', 'for summoning me ')
     .addField('@Zadezter#0207', 'for Helping my Master ')
-    .addField('@Wolfie#7213', 'For Fixing all My Erros
+    .addField('@Wolfie#7213', 'For Fixing all My Errors ')
     .setColor('RANDOM')
     return message.channel.send(aboutembed);
     }
