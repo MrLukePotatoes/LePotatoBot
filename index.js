@@ -10,13 +10,13 @@ client.on('message', async message => {
     if (message.author.bot) return;
     
     if (message.content === '>help') {
-    let helpembed = new Discord.RichEmbed()
-    .setTitle('- LePotatoBot | Commands -')
-    .setDescription('Prefix [ > ]')
-    .addField('No commands yet' 'Sorry') 
-    .setColor('RANDOM')
-    .setFooter(`Requested by ${message.author.tag}`)
-    return message.channel.send(helpembed)
+         let helpembed = new Discord.RichEmbed()
+         .setTitle('- LePotatoBot | Commands -')
+         .setDescription('Prefix [ > ]')
+         .addField('No commands yet' 'Sorry') 
+         .setColor('RANDOM')
+         .setFooter(`Requested by ${message.author.tag}`)
+         return message.channel.send(helpembed)
     };
 });
 
