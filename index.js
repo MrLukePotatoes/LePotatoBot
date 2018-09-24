@@ -9,7 +9,7 @@ client.on('ready', () => {
 client.on('message', async message => {
     if (message.author.bot) return;
     
-    if (message.content === '>help') {
+    if (message.content === 'l>help') {
       let helpembed = new Discord.RichEmbed()
       .setTitle('- LePotatoBot | Commands -')
       .setDescription('Prefix [ l> ]')
