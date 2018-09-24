@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('on remaking...', {type: 'WATCHING'});
+    client.user.setActivity('Myself being reborn', {type: 'WATCHING'});
 });
 
 client.on('message', async message => {
