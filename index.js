@@ -18,6 +18,7 @@ client.on('message', async message => {
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
     };
+    
     if (message.content === '>gayrate') {
       let user = message.mentions.users.first() || message.author;
       let gayembed = new Discord.RichEmbed()
