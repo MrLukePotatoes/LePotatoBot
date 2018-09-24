@@ -13,7 +13,8 @@ client.on('message', async message => {
       let helpembed = new Discord.RichEmbed()
       .setTitle('- LePotatoBot | Commands -')
       .setDescription('Prefix [ > ]')
-      .addField('>gayrate','Shows how much gay you are') 
+      .addField('>gayrate','Shows how much gay you are')
+      .addField('>hmcwyg','How many crush will you get in aroumd the world')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
@@ -31,7 +32,7 @@ client.on('message', async message => {
       let user = message.mentions.users.first() || message.author;
       let hmcwygembed = new Discord.RichEmbed()
       .setAuthor(`${message.author.username}`)
-      .addField(`Gay Rate`, `Around the World **${Math.floor(Math.random() * 1000000000)} people has a crush on you **!`)
+      .addField(`HMCWYG`, `Around the World **${Math.floor(Math.random() * 1000000000)} people has a crush on you **!`)
       return message.channel.send(hmcwygembed)
      };
 });
