@@ -12,15 +12,15 @@ client.on('message', async message => {
     if (message.content === '>help') {
       let helpembed = new Discord.RichEmbed()
       .setTitle('- LePotatoBot | Commands -')
-      .setDescription('Prefix [ > ]')
-      .addField('>gayrate','Shows how much gay you are')
-      .addField('>hmcwyg','How many crush will you get in aroumd the world')
+      .setDescription('Prefix [ l> ]')
+      .addField('l>gayrate','Shows how much gay you are')
+      .addField('l>hmcwyg','How many crush will you get in aroumd the world')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
     };
     
-    if (message.content === '>gayrate') {
+    if (message.content === 'l>gayrate') {
       let user = message.mentions.users.first() || message.author;
       let gayembed = new Discord.RichEmbed()
       .setAuthor(`${message.author.username}`)
@@ -28,7 +28,7 @@ client.on('message', async message => {
       return message.channel.send(gayembed);
     };
     
-    if (message.content === '>hmcwyg') {
+    if (message.content === 'l>hmcwyg') {
       let user = message.mentions.users.first() || message.author;
       let hmcwygembed = new Discord.RichEmbed()
       .setAuthor(`${message.author.username}`)
