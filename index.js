@@ -13,10 +13,17 @@ client.on('message', async message => {
       let helpembed = new Discord.RichEmbed()
       .setTitle('- LePotatoBot | Commands -')
       .setDescription('Prefix [ > ]')
-      .addField('NO Commands Yet') 
+      .addField('>gayrate','Shows how much gay you are') 
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
+    };
+    if (message.content === '>gayrate') {
+      let user = message.mentions.users.first() || message.author;
+      let gayembed = new Discord.RichEmbed()
+      .setAuthor(`${message.author.username}`)
+      .addField(`Gay Rate`, `Wow! **${Math.floor(Math.random() * 100)}% Gay**! :gay_pride_flag:`)
+      return message.channel.send(gayembed);
      };   
 });
 
