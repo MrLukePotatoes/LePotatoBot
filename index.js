@@ -25,7 +25,15 @@ client.on('message', async message => {
       .setAuthor(`${message.author.username}`)
       .addField(`Gay Rate`, `Wow! **${Math.floor(Math.random() * 100)}% Gay**! :gay_pride_flag:`)
       return message.channel.send(gayembed);
-     };   
+    };
+    
+    if (message.content === '>hmcwyg') {
+      let user = message.mentions.users.first() || message.author;
+      let gayembed = new Discord.RichEmbed()
+      .setAuthor(`${message.author.username}`)
+      .addField(`Gay Rate`, `Around the World **${Math.floor(Math.random() * 1000000000)} people has a crush on you **!`)
+      return message.channel.send(gayembed)
+     };
 });
 
 client.login(process.env.BOT_TOKEN);
