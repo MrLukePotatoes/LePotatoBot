@@ -29,10 +29,10 @@ client.on('message', async message => {
     
     if (message.content === '>hmcwyg') {
       let user = message.mentions.users.first() || message.author;
-      let gayembed = new Discord.RichEmbed()
+      let hmcwygembed = new Discord.RichEmbed()
       .setAuthor(`${message.author.username}`)
       .addField(`Gay Rate`, `Around the World **${Math.floor(Math.random() * 1000000000)} people has a crush on you **!`)
-      return message.channel.send(gayembed)
+      return message.channel.send(hmcwygembed)
      };
 });
 
