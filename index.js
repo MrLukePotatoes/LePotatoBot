@@ -32,7 +32,7 @@ client.on('message', async message => {
       let user = message.mentions.users.first() || message.author;
       let hmcwygembed = new Discord.RichEmbed()
       .setAuthor(`${message.author.username}`)
-      .addField(`HMCWYG`, `Around the World **${Math.floor(Math.random() * 7000000000)}** people has a crush on you!`)
+      .addField(`How Many Crush`, `Around the World **${Math.floor(Math.random() * 7000000000)}** people has a crush on you!`)
       return message.channel.send(hmcwygembed)
      };
 });
