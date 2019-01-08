@@ -34,6 +34,12 @@ client.on('message', async message => {
       .setAuthor(`${message.author.username}`)
       .addField(`How Many Crush`, `Around the World **${Math.floor(Math.random() * 7000000000)}** people has a crush on you!`)
       return message.channel.send(hmcwygembed)
+    };
+    
+    if (message.content === 'l>say') {
+     const sayMessage = args.join(" ");
+     message.delete().catch(O_o=>{});
+     message.channel.send(sayMessage);
      };
 });
 
