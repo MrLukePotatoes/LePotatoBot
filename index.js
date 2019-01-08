@@ -15,6 +15,7 @@ client.on('message', async message => {
       .setDescription('Prefix [ l> ]')
       .addField('l>gayrate','Shows how much gay you are')
       .addField('l>hmc','How many crush will you get in aroumd the world')
+      .addField('l>say','Say anything using the command and the bot will say it')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
