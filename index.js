@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setStatus('dnd');
-    client.user.setActivity('Myself being reborn', {type: 'WATCHING'});
+    client.user.setActivity('My Owner', {type: 'WATCHING'});
 });
 
 client.on('message', async message => {
@@ -14,7 +14,7 @@ client.on('message', async message => {
       .setTitle('- LePotatoBot | Commands -')
       .setDescription('Prefix [ l> ]')
       .addField('l>gayrate','Shows how much gay you are')
-      .addField('l>hmcwyg','How many crush will you get in aroumd the world')
+      .addField('l>hmc','How many crush will you get in aroumd the world')
       .setColor('RANDOM')
       .setFooter(`Requested by ${message.author.tag}`)
       return message.channel.send(helpembed);
@@ -28,11 +28,11 @@ client.on('message', async message => {
       return message.channel.send(gayembed);
     };
     
-    if (message.content === 'l>hmcwyg') {
+    if (message.content === 'l>hmc') {
       let user = message.mentions.users.first() || message.author;
       let hmcwygembed = new Discord.RichEmbed()
       .setAuthor(`${message.author.username}`)
-      .addField(`HMCWYG`, `Around the World **${Math.floor(Math.random() * 1000000000)} people has a crush on you **!`)
+      .addField(`HMCWYG`, `Around the World **${Math.floor(Math.random() * 7000000000)}** people has a crush on you!`)
       return message.channel.send(hmcwygembed)
      };
 });
