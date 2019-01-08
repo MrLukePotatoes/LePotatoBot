@@ -38,9 +38,11 @@ client.on('message', async message => {
     };
     
     if (message.content === 'l>say') {
+      let sayembed = new Discord.RichEmbed()
       const sayMessage = args.join(" ");
       message.delete().catch(O_o=>{});
       message.channel.send(sayMessage);
+      return message.channel.send(sayembed)
      };
 });
 
