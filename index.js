@@ -8,7 +8,17 @@ client.on('ready', () => {
 
 client.on('message', async message => {
     if (message.author.bot) return;
-    
+  
+    if (message.content === '>user') {
+    let userembed = new Discord.RichEmbed()
+    .setTitle(`${message.author.tag}'s Discord User Info`)
+    .setColor('RANDOM')
+    .setThumbnail(client.user.avatarURL)
+    .addField('Your ID:', message.author.id, true)
+    .addField('Joined on:', message.member.joinedAt.toDateString(), true)
+    .addField('Account Type:', message.member.user.bot ? 'Bot' : 'Personal', true)
+    .setFooter(`Requested by ${message.author.tag}`)
+    return message.channel.send(userembed);
      };
 });
 
